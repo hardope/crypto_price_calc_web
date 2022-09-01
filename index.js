@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
      document.querySelector('#submit').disabled = true;
 
      document.querySelector('#name').onkeyup = () => {
-          if (document.querySelector('#name').value.length > 0 && document.querySelector('#number').value.length > 0){
+          if (document.querySelector('#name').value.length > 0){
                document.querySelector('#submit').disabled = false;
           }
           else {
