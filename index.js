@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function(){
      }
      document.querySelector('#submit').onclick = () => {
           const name = document.querySelector('#name').value.toLowerCase();
-          let number = 1;
           number = document.querySelector('#number').value;
           fetch(`https://api.coincap.io/v2/assets/${name}`)
           .then(response => response.json())
