@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
+     // Make it impossible to submit empty form
      document.querySelector('#submit').disabled = true;
-
+     // Confirm State of form filled or empty
      document.querySelector('#name').onkeyup = () => {
           if (document.querySelector('#name').value.length > 0){
                document.querySelector('#submit').disabled = false;
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
                }
 
           })
+          // Empty Fields
           document.querySelector('#name').value = '';
           document.querySelector('#number').value = '';
           document.querySelector('#submit').disabled = true;
